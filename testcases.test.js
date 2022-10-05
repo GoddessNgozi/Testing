@@ -1,7 +1,7 @@
-const { stringLength, reverseString, Calculator } = require('./testcases.js');
+const { stringLength, reverseString, Calculator, capitalize } = require('./testcases.js');
 
 describe('Practise tests for strings', () => {
-  test('Gives the length of a string passed', () => {
+  test('Return the length of string', () => {
     // Arrange
     const str = 'hello';
     // Act
@@ -9,7 +9,9 @@ describe('Practise tests for strings', () => {
     // Assert
     expect(result).toBe(5);
   });
+});
 
+describe('Assert if string is reversed', () => {
   test('reverse a string', () => {
     // Arrange
     const string = 'hello';
@@ -63,5 +65,19 @@ describe('Perform basic math expression on two numbers', () => {
     const result = calculate.divide();
     // Assert
     expect(result).toBe(2);
+  });
+});
+
+describe('Assert if string is capitalized', () => {
+  test('Parameter must be a string', () => {
+    const string = 'hello';
+    const type = typeof string;
+    expect(type).toBe('string');
+  });
+
+  test('Is Parameter capitalized', () => {
+    const string = 'hello';
+    const result = capitalize(string);
+    expect(result).toBe('Hello');
   });
 });

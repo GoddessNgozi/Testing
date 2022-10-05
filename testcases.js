@@ -34,5 +34,11 @@ function reverseString(string) {
       return quotient;
     }
   }
+
+  function capitalize(string) {
+    const stringArray = string.split('');
+    const capitalized = stringArray[0].toUpperCase() + stringArray.slice(1);
+    return capitalized;
+  }
   
-  module.exports = { stringLength, reverseString, Calculator };
+  module.exports = { stringLength, reverseString, Calculator, capitalize };
