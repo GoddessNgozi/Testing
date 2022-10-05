@@ -1,6 +1,6 @@
-const { stringLength } = require('./testcases.js');
+const { stringLength, reverseString } = require('./testcases.js');
 
-describe('Parameter must be between 1 to 10', () => {
+describe('Practise tests for strings', () => {
   test('Gives the length of a string passed', () => {
     // Arrange
     const str = 'hello';
@@ -8,5 +8,14 @@ describe('Parameter must be between 1 to 10', () => {
     const result = stringLength(str);
     // Assert
     expect(result).toBe(5);
+  });
+
+  test('reverse a string', () => {
+    // Arrange
+    const string = 'hello';
+    // Act
+    const result = reverseString(string);
+    // Assert
+    expect(result).toBe('olleh');
   });
 });

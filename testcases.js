@@ -6,5 +6,10 @@ function stringLength (string) {
       }
       throw 'String must be between 1 and 10 characters';
 }
+
+function reverseString(string) {
+    const reverseString = string.split('').reverse().join('');
+    return reverseString;
+  }
   
-  module.exports = { stringLength };
+  module.exports = { stringLength, reverseString };
