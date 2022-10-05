@@ -11,5 +11,28 @@ function reverseString(string) {
     const reverseString = string.split('').reverse().join('');
     return reverseString;
   }
+
+  class Calculator {
+    constructor(a, b) {
+      this.a = a;
+      this.b = b;
+    }
+    add() {
+      const sum = this.a + this.b;
+      return sum;
+    }
+    subtract() {
+      const minus = this.a - this.b; 
+      return minus;
+    }
+    multiply() {
+      const product = this.a * this.b
+      return product;
+    }
+    divide() {
+      const quotient = this.a / this.b
+      return quotient;
+    }
+  }
   
-  module.exports = { stringLength, reverseString };
+  module.exports = { stringLength, reverseString, Calculator };
