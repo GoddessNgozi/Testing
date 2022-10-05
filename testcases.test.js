@@ -3,9 +3,9 @@ const { stringLength, reverseString, Calculator, capitalize } = require('./testc
 describe('Practise tests for strings', () => {
   test('Return the length of string', () => {
     // Arrange
-    const str = 'hello';
+    const string = 'hello';
     // Act
-    const result = stringLength(str);
+    const result = stringLength(string);
     // Assert
     expect(result).toBe(5);
   });
