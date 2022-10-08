@@ -36,8 +36,7 @@ function reverseString(string) {
   }
 
   function capitalize(string) {
-    const stringArray = string.split('');
-    const capitalized = stringArray[0].toUpperCase() + stringArray.slice(1);
+    const capitalized = string.charAt(0).toUpperCase() + string.slice(1, string.length);
     return capitalized;
   }
   
